@@ -1,0 +1,266 @@
+<!-- PRODUCTS SECTION -->
+<section id="products" class="bg-white py-24 border-y border-zinc-100">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
+      
+      <div class="space-y-2">
+        <h2 class="text-3xl font-serif tracking-tight text-zinc-950">
+          Gestión de Productos
+        </h2>
+        <p class="text-zinc-700 font-light text-sm">
+          Administra y visualiza todos tus productos desde una tabla elegante y moderna.
+        </p>
+      </div>
+
+      <button
+        class="bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm px-5 py-3 rounded-xl transition-all shadow-lg shadow-teal-500/10 active:scale-95"
+      >
+        + Nuevo Producto
+      </button>
+    </div>
+
+    <!-- Table Container -->
+    <div class="overflow-hidden rounded-3xl border border-zinc-200 shadow-2xl shadow-zinc-100/70 bg-white">
+
+      <!-- Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[900px]">
+
+          <!-- Head -->
+          <thead class="bg-zinc-50 border-b border-zinc-200">
+            <tr>
+              <th class="text-left px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Producto
+              </th>
+
+              <th class="text-left px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Categoría
+              </th>
+
+              <th class="text-left px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Precio
+              </th>
+
+              <th class="text-left px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Estado
+              </th>
+
+              <th class="text-left px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Stock
+              </th>
+
+              <th class="text-right px-6 py-5 text-xs font-medium uppercase tracking-widest text-zinc-500">
+                Acciones
+              </th>
+            </tr>
+          </thead>
+
+          <!-- Body -->
+          <tbody class="divide-y divide-zinc-100">
+
+            <!-- Row -->
+            <tr class="hover:bg-zinc-50 transition-colors">
+
+              <!-- Product -->
+              <td class="px-6 py-5">
+                <div class="flex items-center gap-4">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=200"
+                    alt="iPhone"
+                    class="w-14 h-14 rounded-2xl object-cover border border-zinc-200"
+                  >
+
+                  <div>
+                    <h3 class="text-sm font-medium text-zinc-900">
+                      iPhone 15 Pro
+                    </h3>
+
+                    <p class="text-xs text-zinc-500 mt-1">
+                      ID: #PROD-001
+                    </p>
+                  </div>
+
+                </div>
+              </td>
+
+              <!-- Category -->
+              <td class="px-6 py-5 text-sm text-zinc-700 font-light">
+                Smartphones
+              </td>
+
+              <!-- Price -->
+              <td class="px-6 py-5">
+                <span class="text-sm font-medium text-zinc-900">
+                  $28,999
+                </span>
+              </td>
+
+              <!-- Status -->
+              <td class="px-6 py-5">
+                <span class="bg-emerald-50 text-emerald-600 border border-emerald-100 px-3 py-1 rounded-full text-xs font-medium">
+                  Disponible
+                </span>
+              </td>
+
+              <!-- Stock -->
+              <td class="px-6 py-5 text-sm text-zinc-700">
+                15 unidades
+              </td>
+
+              <!-- Actions -->
+              <td class="px-6 py-5">
+                <div class="flex items-center justify-end gap-3">
+
+                  <button
+                    class="px-4 py-2 rounded-xl border border-zinc-200 text-sm text-zinc-700 hover:bg-zinc-100 transition-colors"
+                  >
+                    Editar
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-xl bg-red-50 text-red-600 hover:bg-red-100 text-sm transition-colors"
+                  >
+                    Eliminar
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row -->
+            <tr class="hover:bg-zinc-50 transition-colors">
+
+              <td class="px-6 py-5">
+                <div class="flex items-center gap-4">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=200"
+                    alt="Nike"
+                    class="w-14 h-14 rounded-2xl object-cover border border-zinc-200"
+                  >
+
+                  <div>
+                    <h3 class="text-sm font-medium text-zinc-900">
+                      Nike Air Max
+                    </h3>
+
+                    <p class="text-xs text-zinc-500 mt-1">
+                      ID: #PROD-002
+                    </p>
+                  </div>
+
+                </div>
+              </td>
+
+              <td class="px-6 py-5 text-sm text-zinc-700 font-light">
+                Calzado
+              </td>
+
+              <td class="px-6 py-5">
+                <span class="text-sm font-medium text-zinc-900">
+                  $3,499
+                </span>
+              </td>
+
+              <td class="px-6 py-5">
+                <span class="bg-yellow-50 text-yellow-700 border border-yellow-100 px-3 py-1 rounded-full text-xs font-medium">
+                  Bajo Stock
+                </span>
+              </td>
+
+              <td class="px-6 py-5 text-sm text-zinc-700">
+                3 unidades
+              </td>
+
+              <td class="px-6 py-5">
+                <div class="flex items-center justify-end gap-3">
+
+                  <button
+                    class="px-4 py-2 rounded-xl border border-zinc-200 text-sm text-zinc-700 hover:bg-zinc-100 transition-colors"
+                  >
+                    Editar
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-xl bg-red-50 text-red-600 hover:bg-red-100 text-sm transition-colors"
+                  >
+                    Eliminar
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row -->
+            <tr class="hover:bg-zinc-50 transition-colors">
+
+              <td class="px-6 py-5">
+                <div class="flex items-center gap-4">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=200"
+                    alt="Audífonos"
+                    class="w-14 h-14 rounded-2xl object-cover border border-zinc-200"
+                  >
+
+                  <div>
+                    <h3 class="text-sm font-medium text-zinc-900">
+                      Sony WH-1000XM5
+                    </h3>
+
+                    <p class="text-xs text-zinc-500 mt-1">
+                      ID: #PROD-003
+                    </p>
+                  </div>
+
+                </div>
+              </td>
+
+              <td class="px-6 py-5 text-sm text-zinc-700 font-light">
+                Audio
+              </td>
+
+              <td class="px-6 py-5">
+                <span class="text-sm font-medium text-zinc-900">
+                  $7,999
+                </span>
+              </td>
+
+              <td class="px-6 py-5">
+                <span class="bg-zinc-100 text-zinc-600 border border-zinc-200 px-3 py-1 rounded-full text-xs font-medium">
+                  Agotado
+                </span>
+              </td>
+
+              <td class="px-6 py-5 text-sm text-zinc-700">
+                0 unidades
+              </td>
+
+              <td class="px-6 py-5">
+                <div class="flex items-center justify-end gap-3">
+
+                  <button
+                    class="px-4 py-2 rounded-xl border border-zinc-200 text-sm text-zinc-700 hover:bg-zinc-100 transition-colors"
+                  >
+                    Editar
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-xl bg-red-50 text-red-600 hover:bg-red-100 text-sm transition-colors"
+                  >
+                    Eliminar
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
