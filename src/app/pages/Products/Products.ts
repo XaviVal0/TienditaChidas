@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
+import { Modal } from '../../../components/Modal/Modal';
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [Modal],
   templateUrl: './Products.html',
   styles: `
     :host {
@@ -11,4 +11,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Products {}
+export class Products {
+  isModalOpen = false;
+
+  openModal(): void {
+    this.isModalOpen = true;
+  }
+
+
+}

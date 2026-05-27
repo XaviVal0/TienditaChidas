@@ -1,0 +1,199 @@
+<!-- BACKDROP -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4">
+
+  <!-- MODAL -->
+  <div class="w-full max-w-3xl bg-white rounded-3xl border border-zinc-200 shadow-2xl overflow-hidden">
+
+    <!-- HEADER -->
+    <div class="flex items-center justify-between px-8 py-6 border-b border-zinc-100">
+
+      <div>
+
+        <h2 class="text-2xl font-serif text-zinc-950">
+          Agregar Producto
+        </h2>
+
+        <p class="text-sm text-zinc-500 mt-1 font-light">
+          Completa la información del producto.
+        </p>
+
+      </div>
+
+      <!-- CLOSE -->
+      <button
+        class="w-11 h-11 rounded-xl hover:bg-zinc-100 flex items-center justify-center text-zinc-500 transition-colors text-xl"
+      >
+        ✕
+      </button>
+
+    </div>
+
+    <!-- FORM -->
+    <form class="p-8 space-y-6">
+
+      <!-- GRID -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- PRODUCT NAME -->
+        <div class="space-y-2">
+
+          <label class="block text-xs uppercase tracking-widest text-zinc-600">
+            Nombre del Producto
+          </label>
+
+          <input
+            type="text"
+            placeholder="iPhone 15 Pro"
+            class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-all"
+          >
+
+        </div>
+
+        <!-- CATEGORY -->
+        <div class="space-y-2">
+
+          <label class="block text-xs uppercase tracking-widest text-zinc-600">
+            Categoría
+          </label>
+
+          <select
+            class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-all"
+          >
+            <option>Electrónica</option>
+            <option>Audio</option>
+            <option>Calzado</option>
+            <option>Accesorios</option>
+          </select>
+
+        </div>
+
+        <!-- PRICE -->
+        <div class="space-y-2">
+
+          <label class="block text-xs uppercase tracking-widest text-zinc-600">
+            Precio
+          </label>
+
+          <input
+            type="number"
+            placeholder="$0.00"
+            class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-all"
+          >
+
+        </div>
+
+        <!-- STOCK -->
+        <div class="space-y-2">
+
+          <label class="block text-xs uppercase tracking-widest text-zinc-600">
+            Stock
+          </label>
+
+          <input
+            type="number"
+            placeholder="0"
+            class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-all"
+          >
+
+        </div>
+
+      </div>
+
+      <!-- STATUS -->
+      <div class="space-y-2">
+
+        <label class="block text-xs uppercase tracking-widest text-zinc-600">
+          Estado
+        </label>
+
+        <select
+          class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-all"
+        >
+          <option>Disponible</option>
+          <option>Bajo Stock</option>
+          <option>Agotado</option>
+        </select>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div class="space-y-2">
+
+        <label class="block text-xs uppercase tracking-widest text-zinc-600">
+          Imagen del Producto
+        </label>
+
+        <div class="border-2 border-dashed border-zinc-200 rounded-3xl p-8 text-center hover:border-teal-300 transition-all">
+
+          <div class="space-y-3">
+
+            <div class="text-5xl">
+              📦
+            </div>
+
+            <div>
+
+              <p class="text-sm text-zinc-700 font-medium">
+                Arrastra una imagen aquí
+              </p>
+
+              <p class="text-xs text-zinc-500 mt-1">
+                o selecciona un archivo desde tu computadora
+              </p>
+
+            </div>
+
+            <button
+              type="button"
+              class="px-5 py-2 rounded-xl bg-zinc-100 hover:bg-zinc-200 text-sm text-zinc-700 transition-all"
+            >
+              Seleccionar Imagen
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div class="space-y-2">
+
+        <label class="block text-xs uppercase tracking-widest text-zinc-600">
+          Descripción
+        </label>
+
+        <textarea
+          rows="5"
+          placeholder="Describe el producto..."
+          class="w-full border border-zinc-200 rounded-2xl px-4 py-3 text-sm resize-none focus:outline-none focus:border-teal-400 transition-all"
+        ></textarea>
+
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="flex items-center justify-end gap-4 pt-4">
+
+        <!-- CANCEL -->
+        <button
+          type="button"
+          class="px-5 py-3 rounded-2xl border border-zinc-200 text-sm text-zinc-700 hover:bg-zinc-100 transition-all"
+        >
+          Cancelar
+        </button>
+
+        <!-- SAVE -->
+        <button
+          type="submit"
+          class="bg-teal-600 hover:bg-teal-700 text-white font-medium px-6 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-teal-500/10"
+        >
+          Guardar Producto
+        </button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
