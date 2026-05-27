@@ -14,9 +14,8 @@ import { Modal } from '../../../components/Modal/Modal';
 export class Products {
   isModalOpen = false;
 
-  openModal(): void {
-    this.isModalOpen = true;
-  }
-
+openModal(): void {
+  this.isModalOpen = true;
+}
 
 }

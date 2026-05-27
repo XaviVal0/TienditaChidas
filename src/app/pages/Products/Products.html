@@ -316,5 +316,5 @@
 </section>
 
 @if(isModalOpen){
-  <app-modal></app-modal>
+  <app-modal (close)="isModalOpen = false"></app-modal>
 }

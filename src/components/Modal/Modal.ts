@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output
+} from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,10 +21,10 @@ import { CommonModule } from '@angular/common';
 })
 export class Modal {
 
-  isOpen: boolean = true;
+  @Output() close = new EventEmitter<void>();
 
   closeModal(): void {
-    this.isOpen = false;
+    this.close.emit();
   }
 
   saveProduct(): void {
